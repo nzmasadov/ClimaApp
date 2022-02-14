@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		BFE398AB27BA99F300BAEFB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE398AA27BA99F300BAEFB2 /* AppDelegate.swift */; };
 		BFE398AD27BA99F300BAEFB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE398AC27BA99F300BAEFB2 /* SceneDelegate.swift */; };
-		BFE398AF27BA99F300BAEFB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE398AE27BA99F300BAEFB2 /* ViewController.swift */; };
+		BFE398AF27BA99F300BAEFB2 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE398AE27BA99F300BAEFB2 /* WeatherViewController.swift */; };
 		BFE398B227BA99F300BAEFB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE398B027BA99F300BAEFB2 /* Main.storyboard */; };
 		BFE398B427BA99F400BAEFB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE398B327BA99F400BAEFB2 /* Assets.xcassets */; };
 		BFE398B727BA99F400BAEFB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE398B527BA99F400BAEFB2 /* LaunchScreen.storyboard */; };
+		BFE398C227BAA04300BAEFB2 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE398C127BAA04300BAEFB2 /* WeatherModel.swift */; };
+		BFE398C427BAA05F00BAEFB2 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE398C327BAA05F00BAEFB2 /* WeatherManager.swift */; };
+		BFE398C627BAA08100BAEFB2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE398C527BAA08100BAEFB2 /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFE398A727BA99F300BAEFB2 /* ClimaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE398AA27BA99F300BAEFB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE398AC27BA99F300BAEFB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFE398AE27BA99F300BAEFB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFE398AE27BA99F300BAEFB2 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		BFE398B127BA99F300BAEFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFE398B327BA99F400BAEFB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE398B627BA99F400BAEFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE398B827BA99F400BAEFB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE398C127BAA04300BAEFB2 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		BFE398C327BAA05F00BAEFB2 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		BFE398C527BAA08100BAEFB2 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				BFE398AA27BA99F300BAEFB2 /* AppDelegate.swift */,
 				BFE398AC27BA99F300BAEFB2 /* SceneDelegate.swift */,
-				BFE398AE27BA99F300BAEFB2 /* ViewController.swift */,
-				BFE398B027BA99F300BAEFB2 /* Main.storyboard */,
+				BFE398C027BA9D2400BAEFB2 /* Model */,
+				BFE398BF27BA9D1B00BAEFB2 /* View */,
+				BFE398BE27BA9D0700BAEFB2 /* Controller */,
 				BFE398B327BA99F400BAEFB2 /* Assets.xcassets */,
 				BFE398B527BA99F400BAEFB2 /* LaunchScreen.storyboard */,
 				BFE398B827BA99F400BAEFB2 /* Info.plist */,
 			);
 			path = ClimaApp;
+			sourceTree = "<group>";
+		};
+		BFE398BE27BA9D0700BAEFB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFE398AE27BA99F300BAEFB2 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFE398BF27BA9D1B00BAEFB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFE398B027BA99F300BAEFB2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFE398C027BA9D2400BAEFB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFE398C127BAA04300BAEFB2 /* WeatherModel.swift */,
+				BFE398C327BAA05F00BAEFB2 /* WeatherManager.swift */,
+				BFE398C527BAA08100BAEFB2 /* WeatherData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE398AF27BA99F300BAEFB2 /* ViewController.swift in Sources */,
+				BFE398AF27BA99F300BAEFB2 /* WeatherViewController.swift in Sources */,
 				BFE398AB27BA99F300BAEFB2 /* AppDelegate.swift in Sources */,
+				BFE398C427BAA05F00BAEFB2 /* WeatherManager.swift in Sources */,
+				BFE398C227BAA04300BAEFB2 /* WeatherModel.swift in Sources */,
+				BFE398C627BAA08100BAEFB2 /* WeatherData.swift in Sources */,
 				BFE398AD27BA99F300BAEFB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,11 +328,14 @@
 				DEVELOPMENT_TEAM = 6HY29LK9SJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClimaApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to get current weather for where you are";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +345,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,11 +359,14 @@
 				DEVELOPMENT_TEAM = 6HY29LK9SJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClimaApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to get current weather for where you are";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +376,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
